@@ -79,7 +79,7 @@ public class RMSRepository {
 		try {
 			dbConnect();
 			Statement st=conn.createStatement();
-			String query="INSERT INTO FOOD(type,name,price) VALUES('"+food.type+"','"+food.name+"',"+food.price+")";
+			//String query="INSERT INTO FOOD(type,name,price) VALUES('"+food.type+"','"+food.name+"',"+food.price+")";
 			ResultSet rs=st.executeQuery(query);
 			if(rs==null) {
 				System.out.println("Insert failed");
